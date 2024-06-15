@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#predictionResult {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#predictButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#predictButton:hover {
+    background-color: #45a049;
+}
+/* Same as before */
+ 
+.red {
+    background-color: #ff6666;
+}
+
+.blue {
+    background-color: #66b3ff;
+}
+
+.green {
+    background-color: #85e085;
+}
+
+/* Same CSS as before */
+
+#dragonButton {
+    background-color: #66b3ff; /* Blue */
+}
+
+#tieButton {
+    background-color: #85e085; /* Green */
+}
+
+#tigerButton {
+    background-color: #ffcc66; /* Yellow Orange */
+}
+
+/* Same CSS as before */
+
+ 
+ 
+.red {
+    background-color: #ff6666; /* Dragon */
+}
+
+.blue {
+    background-color: #66b3ff; /* Tie */
+}
+
+.orange {
+    background-color: #ffcc66; /* Tiger */
+}
+
+.container {
+    text-align: center;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    max-width: 600px; /* Adjusted max-width */
+}
+
+.circle {
+    width: 50px; /* Adjusted size */
+    height: 50px; /* Adjusted size */
+    background-color: #ccc; /* Default color */
+    border-radius: 50%; /* Ensures the circle shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Adjusted font size */
+    cursor: pointer;
+}
+
+
+.predictionButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+#resetButton {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#predictionResult {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    overflow-x: auto;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.predictionButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+#resetButton {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 50px auto;
+    }
+
+    .circle-container {
+        max-width: 100%;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #predictionResult {
+        font-size: 20px;
+    }
+
+    .predictionButton {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #resetButton {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+.author {
+    position: absolute; /* Fixed position */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 14px; /* Adjust font size */
+    color: #555; /* Adjust text color */
+}
+/* Popup Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+    transition: opacity 0.3s; /* Add transition effect for opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    transition: transform 0.3s ease-out; /* Add transition effect for transform */
+    transform: translateY(-100px); /* Initial transform to slide in from top */
+}
+
+/* Show the modal */
+.modal.show {
+    display: block; /* Display the modal */
+}
+
+/* Show the modal content */
+.modal.show .modal-content {
+    transform: translateY(0); /* Slide in from top */
+}
+
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon vs Tiger Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dragon vs Tiger Prediction</h1>
+        <div class="circle-container" id="circleContainer">
+            <!-- Circles will be dynamically added here -->
+        </div>
+        <div id="predictionResult"></div>
+        <div class="button-container">
+            <button class="predictionButton" id="dragonButton">D</button>
+            <button class="predictionButton" id="tieButton">Tie</button>
+            <button class="predictionButton" id="tigerButton">T</button>
+        </div>
+        <button id="predictButton">Predict</button>
+        <button id="resetButton">Reset</button>
+        <div class="author">Developer: J-Anony</div> <!-- Add this line -->
+    </div>
+
+     <!-- Popup Modal -->
+     <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
